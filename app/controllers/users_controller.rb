@@ -3,17 +3,14 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  def new
-    @user = User.new
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+    redirect_to "/"
   end
-
-  def create
-    @user = User.create(user_params)
-  end
-
   private
 
   def user_params
-    params.require(:user).permit(:avatar)
+    params.require(:user).permit(:avatar, :email, :username, :password)
   end
 end
