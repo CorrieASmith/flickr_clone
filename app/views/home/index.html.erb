@@ -4,7 +4,7 @@
 <% end %>
 
 <% @pictures.each do |picture| %>
-  <h6>uploaded by <%= picture.user.email %></h6>
+  <h6>uploaded by <%= link_to picture.user.email, user_path(picture.user) %></h6>
   <%= link_to image_tag(picture.image.url, class: 'media-object'), picture.image.url, target: '_blank' %><br>
   <% if current_user == picture.user %>
     <%= link_to "Delete Picture", picture_path(picture), :data => {:confirm => "Are you sure?", :method => "delete"}, class: "btn btn-danger btn-xs" %>
