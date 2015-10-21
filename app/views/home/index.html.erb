@@ -4,5 +4,6 @@
 
 
 <% @pictures.each do |picture| %>
-  <%= link_to image_tag(picture.image.url, class: 'media-object'), picture.image.url, target: '_blank' %>
+  <%= link_to image_tag(picture.image.url, class: 'media-object'), picture.image.url, target: '_blank' %><br>
+  <p>uploaded by <%= picture.user.email %></p>
 <% end %>
