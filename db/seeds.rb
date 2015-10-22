@@ -10,10 +10,10 @@ end
 
 class Picture < ActiveRecord::Base
 
-  pictures = Picture.create([{ image: "http://rs2img.memecdn.com/thug-life_o_752874.jpg", user_id: 100 }])
-  pictures = Picture.create([{ image: "http://apollo-na-uploads.s3.amazonaws.com/1438562405/my-code-doesnt-work-i-have-no-idea-why.jpg", user_id: 200 }])
-  pictures = Picture.create([{ image: "https://40.media.tumblr.com/8d93cee7236baaa36667069f9c893760/tumblr_n8hgtmhpjh1s4oyt0o1_500.jpg", user_id: 300 }])
-  pictures = Picture.create([{ image: "http://i.imgur.com/DS3vxna.jpg", user_id: 400 }])
-  pictures = Picture.create([{ image: "http://static1.fjcdn.com/comments/4753947+_080b91e89af5fa241c34100a9fa24c47.jpg", user_id: 500 }])
+  pictures = Picture.create([{ image: "app/assets/images/cartman.jpg", user_id: 100 }])
+  pictures = Picture.create([{ image: "app/assets/images/stan.jpg", user_id: 200 }])
+  pictures = Picture.create([{ image: "app/assets/images/kyle.jpg", user_id: 300 }])
+  pictures = Picture.create([{ image: "app/assets/images/kenny.jpg", user_id: 400 }])
+  pictures = Picture.create([{ image: "app/assets/images/butters.jpg", user_id: 500 }])
 
 end
