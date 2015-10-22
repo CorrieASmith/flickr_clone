@@ -11,6 +11,8 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '>= 3.2'
 gem 'devise'
 gem "paperclip", "~> 4.3"
+gem 'acts-as-taggable-on'
+gem 'rails_admin', '~> 0.7.0'
 
 group :development do
   gem 'byebug'
